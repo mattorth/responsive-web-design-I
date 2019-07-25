@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5 {
 body {
 	display: flex;
 	flex-direction: column;
-	width: 876px;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -93,11 +93,14 @@ header {
 header nav {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+    align-items: center;
+    flex-grow: 2;
+    padding-right: 5%;
 }
 
 header nav a {
-    padding-right: 50px;
+    flex-basis: content;
+    /* padding-right: 50px; */
 }
 
 .title {
@@ -112,7 +115,6 @@ header nav a {
 #services-title {
 	display: flex;
 	flex-direction: flex-start;
-	/* align-self: flex-start; */
 }
 
 .services-header-img {
@@ -123,11 +125,18 @@ header nav a {
 	display: flex;
 	flex-flow: column wrap;
 	text-align: center;
-	align-items: center;
+    align-items: center;
+    width: 45%;
 }
 .title-right {
 	display: flex;
-	flex-flow: column wrap;
+    flex-flow: column wrap;
+    width: 45%;
+}
+
+.title-right img {
+    max-width: 100%;
+    height: auto;
 }
 
 .top-content {
@@ -149,7 +158,13 @@ header nav a {
 .middle-content {
 	display: flex;
 	padding-bottom: 20px;
-	justify-content: space-between;
+	justify-content: center;
+}
+
+.middle-content .middle-img {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
 }
 
 #get-started {
@@ -257,6 +272,10 @@ footer {
         padding-right: 0;
     }
 
+    .title-left {
+        width: 80%;
+    }
+
 
     .title-right {
         display: none;
@@ -271,5 +290,25 @@ footer {
 /* Mobile View */
 
 @media(max-width: 500px) {
+
+    body {
+        width: 100%;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav a {
+        border-bottom: 1px solid black;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 1.25em;
+    }
+    
+    header {
+        width: 100%;
+    }
 
 }
