@@ -98,7 +98,7 @@ header nav {
     padding-right: 5%;
 }
 
-header nav a {
+header a {
     flex-basis: content;
     /* padding-right: 50px; */
 }
@@ -297,10 +297,12 @@ footer {
 
     header nav {
         flex-direction: column;
+        margin: 0 auto;
+        padding-right: 0;
     }
 
     header nav a {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid gray;
         width: 100%;
         padding: 20px 0;
         text-align: center;
@@ -309,6 +311,49 @@ footer {
     
     header {
         width: 100%;
+        margin: 0 auto;
+    }
+
+    header a {
+        width: 100%;
+        border-bottom: 1px solid gray;
+
+    }
+
+    header a img {
+        display: flex;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .title {
+        padding: 40px 0;
+    }
+
+    .title-left {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .top-content {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    .two-wide {
+        padding: 20px 0;
+    }
+
+    .three-wide {
+        padding: 20px 0;
+    }
+
+    .middle-content {
+        padding-bottom: 0;
     }
 
 }
